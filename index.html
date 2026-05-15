@@ -655,7 +655,27 @@
           <span class="project-arrow">→</span>
         </div>
       </a>
+<div class="preview-card">
 
+  <img src="store-image.jpg" alt="Store Preview" class="preview-image">
+
+  <div class="preview-content">
+    <p class="preview-label">E-commerce Store</p>
+
+    <h3 class="preview-title">
+      ZUVIO
+    </h3>
+
+    <p class="preview-desc">
+     TOP QUALITY #UNBEATABLE PRICES 
+    </p>
+
+    <a href="https://www.daraz.pk/shop/uvng7ukx/" target="_blank" class="preview-btn">
+      Have a look in to our E-com →
+    </a>
+  </div>
+
+</div>
     </div>
   </section>
 
@@ -727,6 +747,65 @@
       </div>
     </div>
   </section>
+  /* ─── STORE PREVIEW CARD ───────────────────────────── */
+
+.preview-card{
+  margin-top:4rem;
+  border:1px solid var(--border);
+  background:var(--surface);
+  overflow:hidden;
+  transition:transform 0.3s ease;
+}
+
+.preview-card:hover{
+  transform:translateY(-5px);
+}
+
+.preview-image{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  display:block;
+}
+
+.preview-content{
+  padding:2rem;
+}
+
+.preview-label{
+  font-size:0.7rem;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:1rem;
+}
+
+.preview-title{
+  font-family:var(--ff-serif);
+  font-size:2rem;
+  font-weight:300;
+  margin-bottom:1rem;
+  color:var(--white);
+}
+
+.preview-desc{
+  color:var(--muted);
+  line-height:1.8;
+  margin-bottom:1.5rem;
+}
+
+.preview-btn{
+  display:inline-block;
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid var(--accent);
+  padding-bottom:3px;
+  transition:0.3s;
+}
+
+.preview-btn:hover{
+  color:var(--white);
+}
 
   <!-- FOOTER -->
   <footer>
