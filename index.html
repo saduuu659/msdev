@@ -264,29 +264,7 @@
       font-size:0.88rem; line-height:1.75; color:var(--muted);
     }
 
-    /* ─── PROCESS ───────────────────────────────────────── */
-    .process { background:var(--surface); }
-    .process-steps {
-      display:grid; grid-template-columns:repeat(4,1fr); gap:0;
-      border:1px solid var(--border); margin-top:3rem;
-    }
-    .step {
-      padding:2.5rem 2rem;
-      border-right:1px solid var(--border);
-      position:relative;
-    }
-    .step:last-child { border-right:none; }
-    .step-num {
-      font-family:var(--ff-serif); font-style:italic;
-      font-size:2.5rem; color:var(--accent); opacity:0.5;
-      margin-bottom:1.2rem;
-    }
-    .step-title {
-      font-size:0.85rem; font-weight:700;
-      letter-spacing:0.08em; text-transform:uppercase;
-      color:var(--white); margin-bottom:0.8rem;
-    }
-    .step-desc { font-size:0.82rem; line-height:1.7; color:var(--muted); }
+
 
     /* ─── WORK ──────────────────────────────────────────── */
     .projects-list { display:flex; flex-direction:column; gap:0; }
@@ -386,9 +364,67 @@
       margin-bottom:0.3rem;
     }
     .detail-val {
-      font-size:0.9rem; color:var(--white);
+      font-size:0.9rem; color:var(--white)
     }
+    /* ─── STORE PREVIEW CARD ───────────────────────────── */
 
+.preview-card{
+  margin-top:4rem;
+  border:1px solid var(--border);
+  background:var(--surface);
+  overflow:hidden;
+  transition:transform 0.3s ease;
+}
+
+.preview-card:hover{
+  transform:translateY(-5px);
+}
+
+.preview-image{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  display:block;
+}
+
+.preview-content{
+  padding:2rem;
+}
+
+.preview-label{
+  font-size:0.7rem;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:1rem;
+}
+
+.preview-title{
+  font-family:var(--ff-serif);
+  font-size:2rem;
+  font-weight:300;
+  margin-bottom:1rem;
+  color:var(--white);
+}
+
+.preview-desc{
+  color:var(--muted);
+  line-height:1.8;
+  margin-bottom:1.5rem;
+}
+
+.preview-btn{
+  display:inline-block;
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid var(--accent);
+  padding-bottom:3px;
+  transition:0.3s;
+}
+
+.preview-btn:hover{
+  color:var(--white);
+}
     /* ─── CONTACT ───────────────────────────────────────── */
     .contact-section {
       background:var(--surface);
@@ -480,6 +516,7 @@
       .about-photo { max-width:400px; }
       footer { flex-direction:column; gap:0.5rem; text-align:center; }
     }
+
   </style>
 </head>
 <body>
@@ -631,7 +668,6 @@
 
   <img src="store-image.jpg" alt="Store Preview" class="preview-image">
 
-
   <div class="preview-content">
     <p class="preview-label">E-commerce Store</p>
 
@@ -645,6 +681,10 @@
 
     <a href="https://www.daraz.pk/shop/uvng7ukx/" target="_blank" class="preview-btn">
       Have a look in to our E-com →
+
+
+
+      
     </a>
   </div>
 
